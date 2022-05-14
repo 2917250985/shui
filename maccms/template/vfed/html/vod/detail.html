@@ -1,0 +1,11 @@
+{include file="public/head"}
+{include file="module/briefs"}
+<script src="/jx/gg2.js"></script>
+{include file="module/lister"}
+{include file="module/taobao"}
+{include file="module/relate"}
+<div class="lsc">
+<span>{$maccms.site_name}(1gh.cc)为您提供 《<b>{:str_replace($param['wd'],'<span class="fed-text-green fed-text-bold">'.$param['wd'].'</span>',mac_filter_html($obj['vod_name']))}在线观看</b>》 相关剧情简介、图片、在线播放地址等信息，为您观看 <b>{:str_replace($param['wd'],'<span class="fed-text-green fed-text-bold">'.$param['wd'].'</span>',mac_filter_html($obj['vod_name']))}</b>  影片提供最有价值的影音报告！</span>
+<p><strong>本文链接：</strong>如果喜欢这部影片《{:str_replace($param['wd'],'<span class="fed-text-green fed-text-bold">'.$param['wd'].'</span>',mac_filter_html($obj['vod_name']))}在线观看》 转载:<a href="{:mac_url_vod_detail($obj)}" target="_blank" title="{:str_replace($param['wd'],'<span class="fed-text-green fed-text-bold">'.$param['wd'].'</span>',mac_filter_html($obj['vod_name']))}在线观看">{$maccms.site_url}{:mac_url_vod_detail($obj)}</a> 请保留本文链接。</p>
+</div>
+{include file="public/footer"}
