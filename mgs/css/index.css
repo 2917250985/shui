@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: url(http://api.btstu.cn/sjbz/?lx=dongman) no-repeat;
+	background-size: 100%;
+}
+.top{
+	width: 100%;
+	height: 150px;
+	background: #7EDAE1;
+}
+.top-content{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+}
+.item{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto 0 auto;
+	margin-top: 20px;
+	text-align: right;
+/*	background-color: aquamarine*/
+}
+.item2{
+	width: 600px;
+	margin: 0;
+	list-style: none;
+	height: 40px;
+	
+}
+.item2 li{
+	width: 150px;
+	height: 40;
+	font-size: 30px;
+	list-style: none;
+	text-align: center;
+	float: left;
+	line-height: -40px;
+}
+.item3{
+	width:100%;
+	height:400px;
+	margin-top: 20px;
+	float: left;
+}
+.item3-left{
+	width: 20%;
+	height:400px;
+	float: left;
+}
+.item3-middle{
+	width:60%;
+	height: 400px;
+	float: left;
+}
+.item3-right{
+	width:20%;
+	height: 400px;;
+	float: right;
+}
+a{
+	text-decoration: none;
+}
