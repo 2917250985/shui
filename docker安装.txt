@@ -1,0 +1,49 @@
+docker安装
+systemctl stop firewalld
+systemctl disable firewalld
+vi /etc/selinux/config 
+reboot
+
+timedatectl
+timedatectl set-timezone "Asia/Shanghai"
+timedatectl
+
+yum install -y yum-utils  device-mapper-persistent-data  lvm2
+yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+yum install -y docker-ce-19.03.2-3.el7 docker-ce-cli-19.03.2-3.el7 containerd.io
+
+docker --version
+systemctl start docker
+
+docker run hello-world
+
+systemctl enable docker
+
+cd /etc/systemd/system/docker.service.d/
+systemctl edit docker.service
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2375
+
+systemctl daemon-reload
+systemctl restart docker.service
+netstat -lntp | grep dockerd
+
+docker -H tcp://192.168.112.128:2375 info
+export DOCEDR_HOST="tcp://192.168.112.128:2375"
+docker -H tcp://192.168.100.60:2375 info
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
