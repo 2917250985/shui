@@ -63,7 +63,7 @@ def ksjsbFriendAssist(api_st, code):
 
 if __name__ == '__main__':
 
-    code = "2790861725085163"
+    code = "2850250262876757"
     
     api_stCK = []
     with open('ksck.txt', 'r') as f:
